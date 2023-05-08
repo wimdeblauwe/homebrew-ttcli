@@ -1,10 +1,10 @@
-# Generated with JReleaser 1.5.1 at 2023-05-07T15:08:13.352941714Z
+# Generated with JReleaser 1.5.1 at 2023-05-08T19:37:35.816358829Z
 class Ttcli < Formula
   desc "CLI interface to make working with Thymeleaf projects easier"
   homepage "https://spring.io/projects/spring-boot/ttcli"
-  url "https://github.com/wimdeblauwe/ttcli/releases/download/0.9.0/ttcli-0.9.0-osx-x86_64.zip"
-  version "0.9.0"
-  sha256 "e1edcf8d92d8a1151e33008558c6b964ebb7cb108ec4638e99d979566e4aa098"
+  url "https://github.com/wimdeblauwe/ttcli/releases/download/0.9.1/ttcli-0.9.1-osx-x86_64.zip"
+  version "0.9.1"
+  sha256 "30b24bd4e3207d9249b83560c1c11e488c1d45ed90693745abf2c93488593193"
   license "Apache License, Version 2.0"
 
 
@@ -15,6 +15,6 @@ class Ttcli < Formula
 
   test do
     output = shell_output("#{bin}/ttcli --version")
-    assert_match "0.9.0", output
+    assert_match "0.9.1", output
   end
 end
