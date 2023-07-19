@@ -1,10 +1,10 @@
-# Generated with JReleaser 1.5.1 at 2023-05-30T07:38:28.874202071Z
+# Generated with JReleaser 1.7.0 at 2023-07-19T18:27:45.798570364Z
 class Ttcli < Formula
   desc "CLI interface to make working with Thymeleaf projects easier"
   homepage "https://github.com/wimdeblauwe/ttcli"
-  url "https://github.com/wimdeblauwe/ttcli/releases/download/0.10.1/ttcli-0.10.1-osx-x86_64.zip"
-  version "0.10.1"
-  sha256 "aa77fedd5575c77ea412c5ce10fde987ecb071198851da03db552d7d0838c928"
+  url "https://github.com/wimdeblauwe/ttcli/releases/download/0.11.0/ttcli-0.11.0-osx-x86_64.zip"
+  version "0.11.0"
+  sha256 "7b50aee16c486d64214b7dc7b84383f1b7ce5698315458a14107bee74dac5e1f"
   license "Apache License, Version 2.0"
 
 
@@ -15,6 +15,6 @@ class Ttcli < Formula
 
   test do
     output = shell_output("#{bin}/ttcli --version")
-    assert_match "0.10.1", output
+    assert_match "0.11.0", output
   end
 end
