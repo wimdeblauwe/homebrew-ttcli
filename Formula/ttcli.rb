@@ -15,6 +15,12 @@ class Ttcli < Formula
     sha256 "28a8385d8266b4edfd36a937eef881d473a30b89dcafe13e0d42f78c98e9fc47"
   end
 
+  if OS.linux? && Hardware::CPU.intel?
+    url "https://github.com/wimdeblauwe/ttcli/releases/download/1.1.1/ttcli-1.1.1-linux-x86_64.tar.gz"
+    sha256 "900b7ae1af47cf6da6408106d67565e27aabc8b39c58f03ebcbebc1a870b2ab6"
+  end
+
+  
 
   def install
     libexec.install Dir["*"]
