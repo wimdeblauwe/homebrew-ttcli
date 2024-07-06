@@ -1,22 +1,22 @@
-# Generated with JReleaser 1.12.0 at 2024-06-11T19:23:36.893508891Z
+# Generated with JReleaser 1.13.1 at 2024-07-06T21:21:51.069300269Z
 
 class Ttcli < Formula
   desc "CLI interface to make working with Thymeleaf projects easier"
   homepage "https://github.com/wimdeblauwe/ttcli"
-  version "1.2.1"
+  version "1.3.0"
   license "Apache License, Version 2.0"
 
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/wimdeblauwe/ttcli/releases/download/1.2.1/ttcli-1.2.1-linux-x86_64.zip"
-    sha256 "5200d99700bc227bdb57a99bfa5a0fed455fa470ad9e311e52059388bfaeaa58"
+    url "https://github.com/wimdeblauwe/ttcli/releases/download/1.3.0/ttcli-1.3.0-linux-x86_64.zip"
+    sha256 "268f0dfe2e02cba5b11cccb4025a812f71e63ffbeab042b2e2d26ad8096dc705"
   end
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/wimdeblauwe/ttcli/releases/download/1.2.1/ttcli-1.2.1-osx-aarch_64.zip"
-    sha256 "60f9c5cdcfc199cd1028fe3ac7c1da7a4e9217cf379561b772462e217ba0a5f1"
+    url "https://github.com/wimdeblauwe/ttcli/releases/download/1.3.0/ttcli-1.3.0-osx-aarch_64.zip"
+    sha256 "e42414a772ca86e0a49fe56e38b855db6456461dad224905d494b809105b83ad"
   end
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/wimdeblauwe/ttcli/releases/download/1.2.1/ttcli-1.2.1-osx-x86_64.zip"
-    sha256 "6940d9ec28fc4154dc4f5c15832bc0c61ec085111043e40e079ea6fb4e242177"
+    url "https://github.com/wimdeblauwe/ttcli/releases/download/1.3.0/ttcli-1.3.0-osx-x86_64.zip"
+    sha256 "6a162bdc744a7c4a45e1bad73b77d679a7dff4b427e649b498878b2901ce52cf"
   end
 
 
@@ -27,6 +27,6 @@ class Ttcli < Formula
 
   test do
     output = shell_output("#{bin}/ttcli --version")
-    assert_match "1.2.1", output
+    assert_match "1.3.0", output
   end
 end
